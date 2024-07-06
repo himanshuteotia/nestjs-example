@@ -46,4 +46,8 @@ test.describe("Cats API", () => {
     const response = await request.delete(`${baseUrl}/cats/${catId}`);
     expect(response.status()).toBe(204);
   });
+
+  test.afterAll(async () => {
+    // Clean up after all tests
+  });
 });
